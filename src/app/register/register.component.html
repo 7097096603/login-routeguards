@@ -1,0 +1,22 @@
+<div class="text-center container">
+    <h2>Register</h2>
+</div>
+<div class="container" style="width: 50%;">
+    <form (ngSubmit)="submit()" [formGroup]="registerForm">
+    <div class="mt-3">
+        <label>Username<span class="text-danger">*</span></label>
+        <input type="text" class="form-control" formControlName="username">
+    </div>
+    <div>
+        <label>Password<span class="text-danger">*</span></label>
+        <input type="password" class="form-control" formControlName="password">
+    </div>
+    <div>
+        <label>Role<span class="text-danger">*</span></label>
+        <input type="role" class="form-control" formControlName="role">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-secondary mt-3">Register</button>
+    </div>
+</form>
+</div>
