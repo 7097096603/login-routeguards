@@ -26,7 +26,7 @@ this.authservice.login(username, password).subscribe(response => {
  localStorage.setItem('token',response.token);
  localStorage.setItem('user',response.user.role);
 this.route.navigate(['/landing']);
-// this is fromfristbranch;
+// this is from second branch;
 });
  }
 }
