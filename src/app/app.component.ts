@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TestService } from './test.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
   userDetails : any;
   fromChild : any;
 
-  constructor( private testservice : TestService){
+  constructor( private testservice : TestService, private route : Router){
 this.getDetails();  
   }
   
@@ -27,5 +28,8 @@ this.testservice.get().subscribe((response : any)=>{
 receiveData(event : any){
 this.fromChild  = event.firstName;
   console.log('this is emitted form child ' + event)
+}
+goto(){
+this.route.navigate(['/test'], { queryParams: { param1: 'value1', param2: 'value2' } });
 }
 }
