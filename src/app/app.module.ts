@@ -12,6 +12,7 @@ import { UserComponent } from './user/user.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
     UserComponent,
     LandingPageComponent,
     UserpageComponent,
-    AdminpageComponent
+    AdminpageComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,

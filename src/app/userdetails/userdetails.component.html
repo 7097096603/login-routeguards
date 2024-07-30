@@ -1,0 +1,23 @@
+<div (click)="sendToParent()" style="margin-top: 10px;border: 2px solid; margin-left: 10px; width: 50%;" [ngClass]="{'admin' : userData.role == 'admin','moderator': userData.role == 'moderator'}">
+    <div>
+        <label for="name">Name :</label>
+        <span>
+           {{userData.firstName + userData.lastName}}
+        </span> 
+    </div>
+   <div>
+    <label for="age">Age :</label>
+    <span>
+        {{userData.age}}
+    </span>
+   </div>
+   <div>
+    <label for="gender">Gender : </label>
+    <span>{{userData.gender}}</span>
+   </div> 
+   <div>
+    <label for="role">Role : </label>
+    <span>{{userData.role}}</span>
+   </div>
+   
+</div>  
