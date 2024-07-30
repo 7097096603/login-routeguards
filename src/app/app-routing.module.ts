@@ -8,6 +8,7 @@ import { authGuard } from './auth.guard';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
+import { TestingComponent } from './testing/testing.component';
 
 const routes: Routes = [
   {path : 'register', component:RegisterComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path : 'landing', component : LandingPageComponent},
   {path : 'user-page', component : UserpageComponent, canActivate: [authGuard],data: {Role : 'user'}},
   {path : 'admin-page', component : AdminpageComponent,canActivate : [authGuard],data: {Role : 'admin'}},
+  {path : 'test', component : TestingComponent},
 ];
 
 @NgModule({

@@ -13,6 +13,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { TestingComponent } from './testing/testing.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     LandingPageComponent,
     UserpageComponent,
     AdminpageComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    TestingComponent
   ],
   imports: [
     BrowserModule,
